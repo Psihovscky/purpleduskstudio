@@ -1,0 +1,61 @@
+body {
+    background-color: #111111;
+    color: #fff;
+    font-family:'Eras ITC', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #131212;
+    padding: 0px;
+    text-align: center;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ac12f3;
+    
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+h2 {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    max-width: 800px;
+    height: 300px;
+}
+
+.social-link img {
+    width: 30px; /* задайте ширину по вашему выбору */
+    height: auto; /* автоматическое вычисление высоты для сохранения пропорций */
+    margin-right: 5px; /* задайте отступ справа, если нужно */
+  }
+
+  .social-link_1 img {
+    width: 200px; /* задайте ширину по вашему выбору */
+    height: 110px; /* автоматическое вычисление высоты для сохранения пропорций */
+    margin-right: 5px;
+  }

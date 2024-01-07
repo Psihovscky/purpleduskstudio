@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var mapContainer = document.getElementById('mapContainer');
     var addressLink = document.querySelector('.adress a');
 
-    // Высота, ширина и смещение карты (вы можете изменить это значение)
+    // Выста, ширина и смещение карты (вы можете изменить это значение)
     var appearanceHeight = -730;
     var appearanceOffset = 620;
     var mapWidth = 450;

@@ -1,15 +1,27 @@
+@media only screen {
+
+
 body {
-    background-color: #111111;
-    color: #fff;
+
+    background-image: url('C:/Users/mykai/Downloads/enhanced-image (11).png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family:'Eras ITC', 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    
 }
 
-header, footer {
-    background-color: #131212;
+header {
     padding: 0px;
     text-align: center;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 section {
@@ -18,24 +30,46 @@ section {
 }
 
 h1, h2 {
-    color: #ac12f3;
+    color: #8c00ff;
+    text-shadow: 1.5px 0px 3px #000000;
+    margin-top: 50px;
+    
     
 }
 
 h3 {
-    font-size: 20px;
+    color: aliceblue;
+    font-size: 22px;
     line-height: 1.5;
+    text-shadow: 1px 1px 2px #000000;
+    margin-left: 600px; /* Автоматический отступ слева */
+    margin-right: 500px;
+    margin-top: 200px;
 }
 h2 {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 p {
     font-size: 18px;
+   
+    
 }
 
+.my-text {
+    font-size: 18px;
+    background-clip: text;
+    color: black;
+    font-weight: 500; /* Минимальная толщина текста */
+    
+}
+
+
+
+
+
 a {
-    color: #3498db;
+   
     text-decoration: none;
 }
 
@@ -46,6 +80,7 @@ a:hover {
 .logo {
     max-width: 800px;
     height: 300px;
+    
 }
 
 .social-link img {
@@ -59,3 +94,52 @@ a:hover {
     height: 110px; /* автоматическое вычисление высоты для сохранения пропорций */
     margin-right: 5px;
   }
+
+  .header a:hover .logo img {
+    filter: brightness(1.2) hue-rotate(270deg); /* Увеличивает яркость изображения при наведении */
+   
+    
+}
+
+.logo-link {
+    
+    width: 5px; /* Устанавливаем ширину, которую вы хотите для области нажатия */
+    height: 5px; /* Устанавливаем высоту, которую вы хотите для области нажатия */
+    overflow: hidden;
+    
+    
+}
+
+
+.adress a{
+    align-self: flex-end;
+    margin-left: 1200px;
+    color: #000000;
+    transition: font-size 0.2s;
+    margin-bottom: 100px;
+    position: absolute;
+    right: 50px; 
+    bottom: -870px;
+    font-weight: 620;
+    text-decoration: none;
+}
+
+.adress a:hover {
+    font-size: 150%; /* Увеличиваем размер шрифта при наведении */
+    color: #ff6347;
+}
+
+.map-container {
+    position: absolute;
+    right: 50px;
+    bottom: 200px;
+    z-index: 1;
+}
+
+#mapContainer {
+  
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+}

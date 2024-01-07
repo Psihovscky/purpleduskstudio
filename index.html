@@ -4,63 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Студия Игр</title>
 </head>
 <body>
 
-    <header>
+  <header class="header">
+    <a href="index.html" class="logo-link"> 
         <div class="logo">
-            <img src="logo.png" alt="Логотип" class="logo">
+            <img src="images/logo.png" alt="Логотип" class="logo">
         </div>
-        <h1></h1>
-    </header>
+    </a>
+    <h1></h1>
+  </header>
 
-    <section>
-        <h2>About us</h2>
-        <h3>This is a new, ambitious game development studio. We aim to create engaging and visually appealing games.<br> Games where players from around the world can enjoy their time and compete with each other, reaching the top of the leaderboards.</h3>
-        <p></p>
-    </section>
-    
-    <section>
-        <h2>Our games</h2>
-        
-        <p>Celestial Ascendance: Run</p>
-        <h2>This our first game.</h2>
-        <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link_1">
-          <img src="google.png" alt="Google Play">
-        </a>
-        <a href="ссылка_на_гугл_плей_для_игры_1" target="_blank"></a>
-        <p>In process...</p>
-        <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link_1">
-            <img src="google.png" alt="Google Play">
-          </a>
-        <!-- Добавьте нужное количество игр и ссылок -->
-    </section>
+  <!-- Отдельный блок для "About us" -->
+  <section class="about-us">
+    <h2>About us</h2>
+    <h3>This is a new, ambitious game development studio. We aim to create engaging and visually appealing games.<br> Games where players from around the world can enjoy their time and compete with each other, reaching the top of the leaderboards.</h3>
+    <p></p>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Finland, Espoo</p>
-        <p>purpledusk.info@gmail.com</p>
-    </section>
+  <!-- Отдельный блок для "Our games" -->
+  <section class="our-games">
+    <h2>Our games</h2>
+    <p>Celestial Ascendance: Run</p>
+    <h2>This our first game.</h2>
+    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link_1">
+      <img src="images/google.png" alt="Google Play">
+    </a>
+    <a href="ссылка_на_гугл_плей_для_игры_1" target="_blank"></a>
+    <p>In process...</p>
+    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link_1">
+        <img src="images/google.png" alt="Google Play">
+    </a>
+    <!-- Добавьте нужное количество игр и ссылок -->
+  </section>
 
-    <footer>
-        <a href="https://www.youtube.com/channel/UCTlglDALzKkoMrkr3IDKnBw" target="_blank" class="social-link">
-            <img src="youtube.png" alt="YouTube">
-        </a> <span>  
-            <a href="https://www.instagram.com/purpledusk.studio/" target="_blank" class="social-link">
-            <img src="instagram.png" alt="Instagram">
-          </a> </span>
-          <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
-            <img src="telegram.png" alt="Telegram">
-          </a> 
-          <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
-            <img src="facebook.png" alt="Facebook">
-          </a>
-          
-        
-        <p>&copy; 2023 Purple Dusk studio. All Rights Reserved.</p>
-        
-    </footer>
-
+  <!-- Отдельный блок для "Contact" -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <button onclick="window.location.href='mailto:purpledusk.info@gmail.com';">Contact Us</button>
+  </section>
+  
+  <!-- Футер с иконками -->
+  <footer>
+    <a href="https://www.youtube.com/channel/UCTlglDALzKkoMrkr3IDKnBw" target="_blank" class="social-link">
+      <img src="images/youtube.png" alt="YouTube">
+    </a> 
+    <span>  
+      <a href="https://www.instagram.com/purpledusk.studio/" target="_blank" class="social-link">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+    </span>
+    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
+      <img src="images/telegram.png" alt="Telegram">
+    </a> 
+    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
+      <img src="images/facebook.png" alt="Facebook">
+    </a>
+    <div id="mapContainer" class="map-container">
+      <p class="adress" id="mapTrigger"><a href="https://maps.google.com/?q=Finland, Espoo" target="_blank">Finland, Espoo</a></p>
+  </div>
+  
+    <p class="my-text">&copy; 2023 Purple Dusk studio. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

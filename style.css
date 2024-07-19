@@ -1,145 +1,819 @@
-@media only screen {
+@media only screen and (max-width: 1920px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: cover;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 30px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1.5px 0px 3px #000000;
+        margin-top: 30px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    p {
+        font-size: 16px;
+    }
+    .my-text {
+        font-size: 16px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 600px;
+        height: 200px;
+    }
+    .social-link img {
+        width: 20px;
+        margin-right: 3px;
+    }
+    .social-link_1 img {
+        width: 150px;
+        height: 80px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 10px;
+        height: 10px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+        
+    }
+    .adress a:hover {
+        font-size: 16px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 20px;
+        bottom: 100px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
 
+    /* Стили для горизонтального расположения иконок социальных сетей */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
 
-body {
-
-    background-image: url('enhanced-image (11).png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family:'Eras ITC', 'Arial', sans-serif;
-    
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
 }
 
-header {
-    padding: 0px;
-    text-align: center;
+@media only screen and (max-width: 1200px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: cover;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 30px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1.5px 0px 3px #000000;
+        margin-top: 30px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    p {
+        font-size: 16px;
+    }
+    .my-text {
+        font-size: 16px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 600px;
+        height: 200px;
+    }
+    .social-link img {
+        width: 20px;
+        margin-right: 3px;
+    }
+    .social-link_1 img {
+        width: 150px;
+        height: 80px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 10px;
+        height: 10px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .adress a:hover {
+        font-size: 16px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 20px;
+        bottom: 100px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: cover;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 30px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1.5px 0px 3px #000000;
+        margin-top: 30px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    p {
+        font-size: 16px;
+    }
+    .my-text {
+        font-size: 16px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 600px;
+        height: 200px;
+    }
+    .social-link img {
+        width: 20px;
+        margin-right: 3px;
+    }
+    .social-link_1 img {
+        width: 150px;
+        height: 80px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 10px;
+        height: 10px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .adress a:hover {
+        font-size: 16px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 20px;
+        bottom: 100px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: cover;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 30px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1.5px 0px 3px #000000;
+        margin-top: 30px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    p {
+        font-size: 16px;
+    }
+    .my-text {
+        font-size: 16px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 600px;
+        height: 200px;
+    }
+    .social-link img {
+        width: 20px;
+        margin-right: 3px;
+    }
+    .social-link_1 img {
+        width: 150px;
+        height: 80px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 10px;
+        height: 10px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+
+    }
+    .adress a:hover {
+        font-size: 16px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 20px;
+        bottom: 100px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 2400px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: cover;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 30px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1.5px 0px 3px #000000;
+        margin-top: 30px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0px;
+        padding: 20px;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    p {
+        font-size: 16px;
+    }
+    .my-text {
+        font-size: 16px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 600px;
+        height: 200px;
+    }
+    .social-link img {
+        width: 20px;
+        margin-right: 3px;
+    }
+    .social-link_1 img {
+        width: 150px;
+        height: 80px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 10px;
+        height: 10px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .adress a:hover {
+        font-size: 16px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 20px;
+        bottom: 100px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
 }
 
 
 
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: contain;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 5px;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 10px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1px 0px 2px #000000;
+        margin-top: 10px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 18px;
+        margin: 0px;
+        padding: 10px;
+        text-shadow: 1px 1px 1px #000000;
+    }
+    p {
+        font-size: 14px;
+    }
+    .my-text {
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 300px;
+        height: 100px;
+    }
+    .social-link img {
+        width: 15px;
+        margin-right: 2px;
+    }
+    .social-link_1 img {
+        width: 100px;
+        height: 50px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 5px;
+        height: 5px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .adress a:hover {
+        font-size: 14px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 10px;
+        bottom: 50px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
-section {
-    padding: 50px;
-    text-align: center;
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: contain;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 5px;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 5px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 1px 0px 1px #000000;
+        margin-top: 5px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 16px;
+        margin: 0px;
+        padding: 5px;
+        text-shadow: 1px 1px 1px #000000;
+    }
+    p {
+        font-size: 12px;
+    }
+    .my-text {
+        font-size: 12px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 150px;
+        height: 50px;
+    }
+    .social-link img {
+        width: 10px;
+        margin-right: 1px;
+    }
+    .social-link_1 img {
+        width: 50px;
+        height: 25px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 3px;
+        height: 3px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .adress a:hover {
+        font-size: 12px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 5px;
+        bottom: 10px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
 }
 
-h1, h2 {
-    color: #8c00ff;
-    text-shadow: 1.5px 0px 3px #000000;
-    margin-top: 50px;
-    
-    
+
+@media only screen and (max-width: 320px) {
+    body {
+        background-image: url('enhanced-image (11).png');
+        background-size: contain;
+        font-family: 'Eras ITC', 'Arial', sans-serif;
+    }
+    header {
+        padding: 2px;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        padding: 2px;
+        text-align: center;
+    }
+    h1, h2 {
+        color: #8c00ff;
+        text-shadow: 0.5px 0px 1px #000000;
+        margin-top: 2px;
+        font-size: 18px;
+    }
+    h3 {
+        color: aliceblue;
+        font-size: 14px;
+        margin: 0px;
+        padding: 2px;
+        text-shadow: 0.5px 0.5px 1px #000000;
+    }
+    p {
+        font-size: 10px;
+    }
+    .my-text {
+        font-size: 10px;
+        color: black;
+        font-weight: 500;
+    }
+    .logo {
+        max-width: 100px;
+        height: 30px;
+    }
+    .social-link img {
+        width: 5px;
+        margin-right: 1px;
+    }
+    .social-link_1 img {
+        width: 20px;
+        height: 10px;
+    }
+    .header a:hover .logo img {
+        filter: brightness(1.2) hue-rotate(270deg);
+    }
+    .logo-link {
+        width: 2px;
+        height: 2px;
+    }
+    .adress a {
+        margin-left: 0;
+        margin-bottom: 5px;
+        font-size: 8px;
+    }
+    .adress a:hover {
+        font-size: 10px;
+        color: #ff6347;
+    }
+    .map-container {
+        right: 2px;
+        bottom: 5px;
+    }
+    #mapContainer {
+        right: 0;
+        bottom: 0;
+    }
+     /* Стили для горизонтального расположения иконок социальных сетей */
+     .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Промежуток между иконками */
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+    }
 }
 
-h3 {
-    color: aliceblue;
-    font-size: 22px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px #000000;
-    margin-left: 600px; /* Автоматический отсуп слева */
-    margin-right: 500px;
-    margin-top: 200px;
-}
-h2 {
-    margin-bottom: 0px;
-}
-
-p {
-    font-size: 18px;
-   
-    
+/* Стили для меню-бургера */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3; /* Устанавливаем высокий z-индекс */
+    position: relative; /* Делаем позиционирование относительно */
 }
 
-.my-text {
-    font-size: 18px;
-    background-clip: text;
-    color: black;
-    font-weight: 500; /* Минимальная толщина текста */
-    
+.burger-line {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: all 0.3s ease;
 }
 
+/* Класс для крестика */
+.burger.open .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
 
+.burger.open .burger-line:nth-child(2) {
+    opacity: 0;
+}
 
+.burger.open .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
 
+.nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1; /* Устанавливаем z-индекс для навигации */
+}
 
-a {
-   
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 20px 0;
+}
+
+.nav-item a {
+    color: white;
     text-decoration: none;
+    font-size: 24px;
 }
 
-a:hover {
-    text-decoration: underline;
+@media only screen and (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .logo {
+        display: none;
+    }
 }
 
-.logo {
-    max-width: 800px;
-    height: 300px;
-    
-}
+@media only screen and (max-width: 480px) {
+    /* Adjustments for very small screens */
+    .burger {
+        width: 25px;
+        height: 25px;
+    }
 
-.social-link img {
-    width: 30px; /* задайте ширину по вашему выбору */
-    height: auto; /* автоматическое вычисление высоты для сохранения пропорций */
-    margin-right: 5px; /* задайте отступ справа, если нужно */
-  }
+    .burger-line {
+        width: 20px;
+        height: 2px;
+    }
 
-  .social-link_1 img {
-    width: 200px; /* задайте ширину по вашему выбору */
-    height: 110px; /* автоматическое вычисление высоты для сохранения пропорций */
-    margin-right: 5px;
-  }
-
-  .header a:hover .logo img {
-    filter: brightness(1.2) hue-rotate(270deg); /* Увеличивает яркость изображения при наведении */
-   
-    
-}
-
-.logo-link {
-    
-    width: 5px; /* Устанавливаем ширину, которую вы хотите для области нажатия */
-    height: 5px; /* Устанавливаем высоту, которую вы хотите для области нажатия */
-    overflow: hidden;
-    
-    
-}
-
-
-.adress a{
-    align-self: flex-end;
-    margin-left: 1200px;
-    color: #000000;
-    transition: font-size 0.2s;
-    margin-bottom: 100px;
-    position: absolute;
-    right: 50px; 
-    bottom: -870px;
-    font-weight: 620;
-    text-decoration: none;
-}
-
-.adress a:hover {
-    font-size: 150%; /* Увеличиваем размер шрифта при наведении */
-    color: #ff6347;
-}
-
-.map-container {
-    position: absolute;
-    right: 50px;
-    bottom: 200px;
-    z-index: 1;
-}
-
-#mapContainer {
-  
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
+    .nav-item a {
+        font-size: 20px;
+    }
 }

@@ -2,14 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Студия Игр</title>
+    <title>Purple Dusk games</title>
 </head>
 <body>
 
   <header class="header">
+    <div class="menu-container">
+        <button class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#about-us">About Us</a></li>
+                <li class="nav-item"><a href="#our-games">Our Games</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <a href="index.html" class="logo-link"> 
         <div class="logo">
             <img src="logo.png" alt="Логотип" class="logo">
@@ -18,19 +32,19 @@
     <h1></h1>
   </header>
 
-  <!-- Отдельный блок для "Abut us" -->
-  <section class="about-us">
+  <!-- Отдельный блок для "About us" -->
+  <section class="about-us" id="about-us">
     <h2>About us</h2>
     <h3>This is a new, ambitious game development studio. We aim to create engaging and visually appealing games.<br> Games where players from around the world can enjoy their time and compete with each other, reaching the top of the leaderboards.</h3>
     <p></p>
   </section>
 
   <!-- Отдельный блок для "Our games" -->
-  <section class="our-games">
+  <section class="our-games" id="our-games">
     <h2>Our games</h2>
-    <p>Dungeon League: clash quest</p>
+    <p>Celestial Ascendance: Run</p>
     <h2>This our first game.</h2>
-    <a href="https://play.google.com/store/apps/details?id=com.PurpleDuskgames.Dungeoons" target="_blank" class="social-link_1">
+    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link_1">
       <img src="google.png" alt="Google Play">
     </a>
     <a href="ссылка_на_гугл_плей_для_игры_1" target="_blank"></a>
@@ -42,30 +56,32 @@
   </section>
 
   <!-- Отдельный блок для "Contact" -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact</h2>
     <button onclick="window.location.href='mailto:purpledusk.info@gmail.com';">Contact Us</button>
   </section>
   
   <!-- Футер с иконками -->
   <footer>
-    <a href="https://www.youtube.com/channel/UCTlglDALzKkoMrkr3IDKnBw" target="_blank" class="social-link">
-      <img src="youtube.png" alt="YouTube">
-    </a> 
-    <span>  
-      <a href="https://www.instagram.com/purpledusk.studio/" target="_blank" class="social-link">
-        <img src="instagram.png" alt="Instagram">
-      </a>
-    </span>
-    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
-      <img src="telegram.png" alt="Telegram">
-    </a> 
-    <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
-      <img src="facebook.png" alt="Facebook">
-    </a>
+    <div class="social-links">
+        <a href="https://www.youtube.com/channel/UCTlglDALzKkoMrkr3IDKnBw" target="_blank" class="social-link">
+          <img src="youtube.png" alt="YouTube">
+        </a> 
+        <span>  
+          <a href="https://www.instagram.com/purpledusk.studio/" target="_blank" class="social-link">
+            <img src="instagram.png" alt="Instagram">
+          </a>
+        </span>
+        <a href="https://t.me/purpleduskoff" target="_blank" class="social-link">
+          <img src="telegram.png" alt="Telegram">
+        </a> 
+        <a href="ссылка_на_ваш_телеграм" target="_blank" class="social-link">
+          <img src="facebook.png" alt="Facebook">
+        </a>
+    </div>
     <div id="mapContainer" class="map-container">
       <p class="adress" id="mapTrigger"><a href="https://maps.google.com/?q=Finland, Espoo" target="_blank">Finland, Espoo</a></p>
-  </div>
+    </div>
   
     <p class="my-text">&copy; 2023 Purple Dusk studio. All Rights Reserved.</p>
   </footer>

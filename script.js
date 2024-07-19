@@ -2,12 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var mapTrigger = document.getElementById('mapTrigger');
     var mapContainer = document.getElementById('mapContainer');
     var addressLink = document.querySelector('.adress a');
+    var burger = document.getElementById('burger');
+    var nav = document.getElementById('nav');
 
-    // Выста, ширина и смещение карты (вы можете изменить это значение)
+    // Высота, ширина и смещение карты (вы можете изменить это значение)
     var appearanceHeight = -730;
     var appearanceOffset = 620;
-    var mapWidth = 450;
-    var mapHeight = 450;
+    var mapWidth = 350;
+    var mapHeight = 270;
 
     var isMapOpen = false;
 
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Позиционируем карту по центру экрана по горизонтали и с учетом заданной высоты, смещения и размеров
         var x = (window.innerWidth - mapContainer.offsetWidth) / 2 + appearanceOffset;
-        var y = window.innerHeight - mapContainer.offsetHeight - appearanceHeight;
+        var y = window.innerHeight - mapContainer.offsetHeight - (appearanceHeight + 50); // Появление карты чуть выше
 
         // Проверяем, чтобы карта не выходила за пределы экрана
         if (x < 0) {
@@ -33,19 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         mapContainer.style.display = 'block';
         isMapOpen = true;
-
-        // Показываем текст при открытии карты
-        addressLink.style.visibility = 'visible';
-        addressLink.style.textDecoration = 'underline';
-        addressLink.style.fontSize = '150%';
     }
 
     function hideMap() {
-        // Показываем текст при закрытии карты
-        addressLink.style.visibility = 'visible';
-        addressLink.style.textDecoration = 'none';
-        addressLink.style.fontSize = '100%';
-
         mapContainer.innerHTML = "";
         mapContainer.style.display = 'none';
         isMapOpen = false;
@@ -59,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     mapTrigger.addEventListener('mouseout', function () {
         if (isMapOpen) {
-            // Убираем карту с задержкой, чтобы пользователь мог случайно навести на нее
+            // Убираем карту с задержкой, чтобы пользователь:
             setTimeout(function () {
                 hideMap();
             }, 300);
@@ -71,5 +63,19 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isMapOpen && !mapContainer.contains(event.target)) {
             hideMap();
         }
+    });
+
+    // Добавляем обработчик для бургер-меню
+    burger.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        burger.classList.toggle('open');  // Добавляем класс для изменения внешнего вида бургер-меню
+    });
+
+    // Закрытие меню при клике на ссылку в меню
+    document.querySelectorAll('.nav-item a').forEach(function(item) {
+        item.addEventListener('click', function() {
+            nav.classList.remove('active');
+            burger.classList.remove('open');
+        });
     });
 });
